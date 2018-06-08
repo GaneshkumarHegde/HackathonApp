@@ -9,7 +9,7 @@
     </style>
     <style name="editText_style">//UI for the the edit text field
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/button_background</item>//importing
+        <item name="android:background">@drawable/edittext_background</item>//importing
         edit_Text_background.xml
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -17,5 +17,14 @@
         <item name="android:ems">10</item>
 
     </style>
+
+    <style name="button_style">//UI for the button part
+        <item name="android:background">@drawable/button_background</item>
+        //importing button_background.xml
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 
 </resources>
