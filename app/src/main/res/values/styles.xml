@@ -1,12 +1,14 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+
     <style name="editText_style">//UI for the the edit text field
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/edittext_background</item>//importing
@@ -20,10 +22,22 @@
 
     <style name="button_style">//UI for the button part
         <item name="android:background">@drawable/button_background</item>
-        //importing button_background.xml
+        //
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_margin">20dp</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
     </style>
 
 
